@@ -21,7 +21,7 @@ const projects: Project[] = [
     description:
       'A clean, minimalist personal website built with Vue.js to showcase my projects and professional experience. Features responsive design and modern UI principles.',
     technologies: ['Vue.js', 'TypeScript', 'CSS3'],
-    github: 'https://github.com/yourusername/personal-website',
+    github: 'https://github.com/onurural/personal_website',
   },
   {
     title: 'Data Pipeline Automation',
