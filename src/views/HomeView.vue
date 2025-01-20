@@ -94,7 +94,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  max-width: 1600px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
 }
@@ -143,8 +143,9 @@ h1 {
   color: #000000;
   font-size: 24px;
   line-height: 1.8;
-  text-align: justify;
+  text-align: left;
   text-justify: inter-word;
+  hyphens: none;
 }
 
 .social-links {
