@@ -125,15 +125,22 @@ main {
 
 h1 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
-  font-weight: 600;
 }
 
-p {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  line-height: 1.7;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+main {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Medium screens */
