@@ -19,11 +19,11 @@
         </p>
 
         <p>
-          I'm currently pursuing a master's degree in Data Science at the University of Greenwich,
-          while working on building scalable data pipelines and real-time analytics systems.
-          Previously, I worked as a software engineer at Tiko, resolving critical bugs and
-          introducing effective debugging processes, and developed a real-time air quality
-          prediction system as part of my academic research.
+          A recent graduate with a Master’s in Big Data and Business Intelligence, while working on
+          building scalable data pipelines and real-time analytics systems. Previously, I worked as
+          a software engineer at Tiko, resolving critical bugs and introducing effective debugging
+          processes, and developed a real-time air quality prediction system as part of my academic
+          research.
         </p>
 
         <p>
@@ -93,7 +93,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 12rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -105,7 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   padding: 0;
 }
 
@@ -139,10 +139,10 @@ h1 {
 }
 
 .intro p {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: #000000;
-  font-size: 24px;
-  line-height: 1.8;
+  font-size: 22px;
+  line-height: 1.6;
   text-align: left;
   text-justify: inter-word;
   hyphens: none;
@@ -207,7 +207,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   h1 {
@@ -220,9 +220,8 @@ h1 {
   }
 
   .intro p {
-    text-align: justify;
-    font-size: 18px;
-    margin-bottom: 2rem;
+    font-size: 16px;
+    margin-bottom: 1.5rem;
   }
 
   .social-links {
@@ -231,18 +230,20 @@ h1 {
   }
 
   .footer-text {
-    bottom: 1rem;
+    position: relative;
+    margin-top: 2rem;
     font-size: 0.9rem;
   }
 
   .content {
-    padding: 1rem;
+    padding: 8rem 1rem;
+    height: auto;
+    min-height: 100vh;
   }
 
   .profile-image img {
     width: 200px;
     height: 200px;
   }
-
 }
 </style>
