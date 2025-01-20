@@ -93,8 +93,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
-  max-width: 2400px;
+  padding: 2rem;
+  max-width: 1600px;
   margin: 0 auto;
   position: relative;
 }
@@ -220,6 +220,8 @@ h1 {
 
   .intro p {
     text-align: justify;
+    font-size: 18px;
+    margin-bottom: 2rem;
   }
 
   .social-links {
@@ -231,5 +233,15 @@ h1 {
     bottom: 1rem;
     font-size: 0.9rem;
   }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .profile-image img {
+    width: 200px;
+    height: 200px;
+  }
+
 }
 </style>
