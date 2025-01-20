@@ -71,100 +71,82 @@
 
 <style scoped>
 .home {
-  width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
-.content {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .header {
-  width: 100%;
-  max-width: 1600px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 6rem;
-  padding: 0;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 600;
   margin: 0;
-  text-align: left;
-  flex: 0 1 auto;
 }
 
 .profile-image {
-  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .profile-image img {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 2px solid var(--background-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .intro {
   width: 100%;
-  max-width: 1600px;
-  text-align: justify;
-  padding: 0;
-  hyphens: auto;
+  max-width: 1200px;
 }
 
 .intro p {
-  margin-bottom: 3rem;
-  color: #000000;
-  font-size: 24px;
-  line-height: 1.8;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
   text-align: left;
-  text-justify: inter-word;
-  hyphens: none;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
 }
 
 .social-links {
-  width: 100%;
-  max-width: 1600px;
   display: flex;
   gap: 2rem;
   margin-top: 2rem;
 }
 
 .social-link {
-  color: #000000;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 500;
-  transition: color 0.2s;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
 }
 
 .social-link svg {
@@ -172,77 +154,48 @@ h1 {
   height: 24px;
 }
 
-.social-link:hover {
-  color: #333333;
-}
-
-.footer-text {
-  position: absolute;
-  bottom: 2rem;
-  font-size: 1rem;
-  color: #000000;
-  text-align: center;
-}
-
-@media (max-width: 1400px) {
-  .header {
-    max-width: 1200px;
-  }
-
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  .intro {
-    max-width: 1200px;
-  }
-
-  .social-links {
-    max-width: 1200px;
-  }
-}
-
 @media (max-width: 768px) {
+  .home {
+    padding: 1rem;
+  }
+
   .header {
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 3rem;
+    text-align: center;
+    gap: 2rem;
   }
 
   h1 {
     font-size: 2.5rem;
-    text-align: center;
   }
 
-  .intro {
-    text-align: justify;
+  .profile-image {
+    width: 150px;
+    height: 150px;
   }
 
   .intro p {
-    text-align: justify;
-    font-size: 18px;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
   }
 
   .social-links {
     justify-content: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
   }
+}
 
-  .footer-text {
-    bottom: 1rem;
-    font-size: 0.9rem;
-  }
+/* Navigation styles - if in App.vue */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 2rem;
+}
 
-  .content {
-    padding: 1rem;
-  }
-
-  .profile-image img {
-    width: 200px;
-    height: 200px;
-  }
-
+nav a {
+  margin-left: 2rem;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
 }
 </style>
