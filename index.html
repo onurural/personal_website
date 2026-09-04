@@ -1,13 +1,194 @@
-<!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onur Ural</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Onur Ural — Software Engineer</title>
+<meta name="description" content="Software engineer based in London. Backend data services and AI engineering tooling at Bromcom; previously founder, and founding engineer at PulpoAR.">
+<link rel="canonical" href="https://onurural.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://onurural.com/">
+<meta property="og:title" content="Onur Ural — Software Engineer">
+<meta property="og:description" content="Software engineer based in London. Backend data services and AI engineering tooling at Bromcom; previously founder, and founding engineer at PulpoAR.">
+<meta property="og:image" content="https://onurural.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url(/fonts/jetbrains-mono.woff2) format('woff2');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #121316;
+  --fg: #d4d6d9;
+  --muted: #8b8f96;
+  --line: #24262a;
+  --link-line: #454a51;
+  --accent: #8ab4f8;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 15px/1.7 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 12vh 24px 16vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--link-line);
+}
+
+a:hover { border-bottom-color: var(--accent); }
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tagline {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+}
+
+.intro { margin: 2.5rem 0 0; }
+
+section { margin: 3rem 0 0; }
+
+h2 {
+  margin: 0 0 1.5rem;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  column-gap: 1.5rem;
+  padding-bottom: 1.35rem;
+}
+
+.timeline li:last-child { padding-bottom: 0; }
+
+.year {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.place {
+  grid-column: 2;
+  color: var(--muted);
+}
+
+.edu .role { color: var(--muted); }
+
+.links {
+  margin: 3rem 0 0;
+  color: var(--muted);
+}
+
+.links a { color: var(--fg); }
+
+.links span {
+  padding: 0 0.4rem;
+  user-select: none;
+}
+
+@media (max-width: 560px) {
+  main { padding: 6vh 20px 10vh; }
+  .timeline li {
+    grid-template-columns: 1fr;
+    padding-bottom: 1.5rem;
+  }
+  .place { grid-column: 1; }
+  .year { font-size: 13px; }
+  .links { line-height: 2.2; }
+}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Onur Ural</h1>
+    <p class="tagline">Software engineer · London</p>
+  </header>
+
+  <p class="intro">Software engineer based in London. I work on backend data services and AI engineering tooling at Bromcom, building agent-driven systems that triage and resolve failures in large-scale customer data migrations. Before that I founded and shipped AI products to over 100,000 downloads, and was the founding engineer at PulpoAR, writing real-time C++ image-processing SDKs for mobile.</p>
+
+  <section>
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <span class="year">2025 —</span>
+        <span class="role">Software Engineer</span>
+        <span class="place">Bromcom · London</span>
+      </li>
+      <li class="edu">
+        <span class="year">2024 — 2025</span>
+        <span class="role">MSc Big Data &amp; Business Intelligence</span>
+        <span class="place">University of Greenwich</span>
+      </li>
+      <li>
+        <span class="year">2023 — 2025</span>
+        <span class="role">Founder / Product Engineer</span>
+        <span class="place">Independent</span>
+      </li>
+      <li>
+        <span class="year">2022</span>
+        <span class="role">Software Engineer</span>
+        <span class="place">Tiko · Madrid</span>
+      </li>
+      <li>
+        <span class="year">2021 — 2022</span>
+        <span class="role">Founding Software Engineer</span>
+        <span class="place">PulpoAR · Izmir</span>
+      </li>
+      <li class="edu">
+        <span class="year">2019 — 2023</span>
+        <span class="role">BSc Software Engineering</span>
+        <span class="place">Izmir University of Economics</span>
+      </li>
+    </ul>
+  </section>
+
+  <nav class="links">
+    <a href="https://github.com/onurural">GitHub</a><span>·</span><a href="https://linkedin.com/in/onur-ural">LinkedIn</a><span>·</span><a href="https://x.com/onururalll">X</a><span>·</span><a href="mailto:contact@onurural.com">Email</a><span>·</span><a href="/resume.pdf">CV</a>
+  </nav>
+</main>
+</body>
 </html>
